@@ -1,28 +1,30 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+//@flow
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
-
+import React, { Component } from "react";
+import "./App.css";
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import Home from "./components/Home";
+import About from "./components/About";
+const Links = () => (
+  <nav>
+    <NavLink exact activeClassName="active" to="/">
+      Home
+    </NavLink>
+    <NavLink exact activeStyle={{ color: "green" }} to="/about">
+      About
+    </NavLink>
+  </nav>
+);
+const App = () => (
+  <Router>
+    <Links />
+    <Route exact path="/" component={Home} />
+    <Route exact path="/about" component={About} />
+    {/* <Route path="/about/render" render={() => <div> hi </div>} /> */}
+    <Route
+      path="/about/render"
+      children={({ match }) => match && <div> hi match </div>}
+    />
+  </Router>
+);
 export default App;
