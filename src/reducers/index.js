@@ -26,6 +26,7 @@ const restaurants = (
 ) => {
   switch (action.type) {
     case 'GET_RESTAURANTS':
+      console.log('in correct case ', state);
       return state;
     default:
       return state;

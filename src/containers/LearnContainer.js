@@ -1,11 +1,16 @@
 import { connect } from 'react-redux';
 import { getRestaurants } from '../actions';
-​
+import Learn from '../components/Learn';
+
+const mapStateToProps = state => ({
+  restaurants: state,
+});
+
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  restaurants: () => dispatch(getRestaurants())
-})
-​
+  restaurantsFn: () => dispatch(getRestaurants()),
+});
+
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
-)(LearnContainer)
+)(Learn);

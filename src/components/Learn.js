@@ -1,76 +1,33 @@
 /* @flow */
 
 import React from 'react';
-import {
-  AppBar,
-  Divider,
-  List,
-  ListItem,
-  Toolbar,
-  Typography,
-} from '@material-ui/core';
+import { AppBar, List, Toolbar, Typography } from '@material-ui/core';
 
-const Learn = () => (
-  <div>
-    <AppBar position="static">
-      <Toolbar>
-        <Typography variant="title" color="inherit" noWrap>
-          Sushi Restaurants
-        </Typography>
-      </Toolbar>
-    </AppBar>
-    <List className="listOfRestaurants">
-      <ListItem container className="listItemContainer">
-        <div item className="listItem">
-          Sushi 1
-        </div>
-        <div item className="listItem">
-          <img
-            alt="sushi"
-            className="listImage"
-            src="https://i.postimg.cc/0yLc9Wff/sushi.png"
-          />
-        </div>
-      </ListItem>
-      <Divider />
-      <ListItem container className="listItemContainer">
-        Sushi 2
-        <img
-          alt="sushi"
-          className="listImage"
-          src="https://i.postimg.cc/0yLc9Wff/sushi.png"
-        />
-      </ListItem>
-      <Divider />
-      <ListItem container className="listItemContainer">
-        Sushi 3
-        <img
-          alt="sushi"
-          className="listImage"
-          src="https://i.postimg.cc/0yLc9Wff/sushi.png"
-        />
-      </ListItem>
-      <Divider />
-      <ListItem container className="listItemContainer">
-        Sushi 4
-        <img
-          alt="sushi"
-          className="listImage"
-          src="https://i.postimg.cc/0yLc9Wff/sushi.png"
-        />
-      </ListItem>
-      <Divider />
-      <ListItem container className="listItemContainer">
-        Sushi 5
-        <img
-          alt="sushi"
-          className="listImage"
-          src="https://i.postimg.cc/0yLc9Wff/sushi.png"
-        />
-      </ListItem>
-      <Divider />
-    </List>
-  </div>
-);
+import RestaurantListItem from './RestaurantListItem';
+
+class Learn extends React.Component<Props, State> {
+  render() {
+    return (
+      <div>
+        <AppBar position="static">
+          <Toolbar>
+            <Typography variant="title" color="inherit" noWrap>
+              Sushi Restaurants
+            </Typography>
+          </Toolbar>
+        </AppBar>
+        <List className="listOfRestaurants">
+          {this.props.restaurants.map(restaurant => (
+            <RestaurantListItem
+              key={restaurant.title}
+              title={restaurant.title}
+              src={restaurant.src}
+            />
+          ))}
+        </List>
+      </div>
+    );
+  }
+}
 
 export default Learn;
