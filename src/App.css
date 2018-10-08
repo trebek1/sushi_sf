@@ -1,10 +1,12 @@
 .gridWrapper {
-  background: red;
   width: auto;
   height: 100vh;
 }
 
 .topNav {
+  background: gray;
+  display: flex;
+  justify-content: flex-start;
   height: 5vh;
   width: auto;
 }
@@ -25,5 +27,10 @@
 .menuBottomButtons {
   display: flex;
   justify-content: space-around;
-  margin: 5px;
+  margin-top: 5vh;
+}
+
+.menuPrimaryButton {
+  height: 10vh;
+  width: 20vw;
 }
