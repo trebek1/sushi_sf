@@ -1,7 +1,7 @@
 /* @flow */
 
-import React from "react";
-import { Button, Card, CardMedia, Grid, Paper } from "@material-ui/core";
+import React from 'react';
+import { Button, CardMedia, Grid } from '@material-ui/core';
 
 const Home = () => (
   <Grid className="homeContainer" container justify="center">

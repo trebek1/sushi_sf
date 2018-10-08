@@ -1,15 +1,14 @@
 /* @flow */
 
-import React from "react";
+import React from 'react';
 import {
   AppBar,
-  CardMedia,
   Divider,
   List,
   ListItem,
   Toolbar,
-  Typography
-} from "@material-ui/core";
+  Typography,
+} from '@material-ui/core';
 
 const Learn = () => (
   <div>
@@ -27,6 +26,7 @@ const Learn = () => (
         </div>
         <div item className="listItem">
           <img
+            alt="sushi"
             className="listImage"
             src="https://i.postimg.cc/0yLc9Wff/sushi.png"
           />
@@ -36,6 +36,7 @@ const Learn = () => (
       <ListItem container className="listItemContainer">
         Sushi 2
         <img
+          alt="sushi"
           className="listImage"
           src="https://i.postimg.cc/0yLc9Wff/sushi.png"
         />
@@ -44,6 +45,7 @@ const Learn = () => (
       <ListItem container className="listItemContainer">
         Sushi 3
         <img
+          alt="sushi"
           className="listImage"
           src="https://i.postimg.cc/0yLc9Wff/sushi.png"
         />
@@ -52,6 +54,7 @@ const Learn = () => (
       <ListItem container className="listItemContainer">
         Sushi 4
         <img
+          alt="sushi"
           className="listImage"
           src="https://i.postimg.cc/0yLc9Wff/sushi.png"
         />
@@ -60,6 +63,7 @@ const Learn = () => (
       <ListItem container className="listItemContainer">
         Sushi 5
         <img
+          alt="sushi"
           className="listImage"
           src="https://i.postimg.cc/0yLc9Wff/sushi.png"
         />
