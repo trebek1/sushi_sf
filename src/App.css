@@ -1,23 +1,13 @@
-.gridWrapper {
-  width: auto;
-  height: 100vh;
-}
-
-.topNav {
-  background: gray;
-  display: flex;
-  justify-content: flex-start;
-  height: 5vh;
-  width: auto;
-}
-
 .childrenContainer {
-  padding: 10px;
   margin: 10px;
+  overflow: auto;
+  padding: 10px;
   width: 80%;
 }
 
-.homeContainer {
+.gridWrapper {
+  width: auto;
+  height: 100vh;
 }
 
 .listOfRestaurants .listItemContainer {
@@ -33,9 +23,6 @@
   height: 200px;
   width: 200px;
 }
-.sushiLandingImage {
-  height: 70vh;
-}
 
 .menuBottomButtons {
   display: flex;
@@ -46,4 +33,16 @@
 .menuPrimaryButton {
   height: 10vh;
   width: 20vw;
+}
+
+.sushiLandingImage {
+  height: 70vh;
+}
+
+.topNav {
+  background: gray;
+  display: flex;
+  justify-content: flex-start;
+  height: 5vh;
+  width: auto;
 }

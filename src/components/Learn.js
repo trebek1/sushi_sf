@@ -57,6 +57,14 @@ const Learn = () => (
         />
       </ListItem>
       <Divider />
+      <ListItem container className="listItemContainer">
+        Sushi 5
+        <img
+          className="listImage"
+          src="https://i.postimg.cc/0yLc9Wff/sushi.png"
+        />
+      </ListItem>
+      <Divider />
     </List>
   </div>
 );
