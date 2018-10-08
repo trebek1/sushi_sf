@@ -1,17 +1,22 @@
 /* @flow */
 
 import React from "react";
-import { Grid, Paper } from "@material-ui/core";
+import { Card, CardMedia, Grid, Paper } from "@material-ui/core";
 
 const Home = () => (
-  <div>
-    <Grid container justify="center">
-      <Grid item>
-        <Paper> Sushi</Paper>
-        <Paper> Another Card Here! </Paper>
-      </Grid>
+  <Grid className="homeContainer" container justify="center">
+    <Grid xs={12} item>
+      <Card>
+        <CardMedia
+          className="sushiLandingImage"
+          src="https://i.postimg.cc/0yLc9Wff/sushi.png"
+          component="img"
+        />
+        <Paper> Sushi In San Francisco </Paper>
+      </Card>
+      {/* <img src="https://i.postimg.cc/0yLc9Wff/sushi.png" /> */}
     </Grid>
-  </div>
+  </Grid>
 );
 
 export default Home;

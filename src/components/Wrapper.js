@@ -6,6 +6,7 @@ import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import purple from "@material-ui/core/colors/purple";
 import green from "@material-ui/core/colors/green";
 import CssBaseline from "@material-ui/core/CssBaseline";
+import NavBar from "./NavBar";
 
 type Props = {|
   children: Node
@@ -30,10 +31,9 @@ const Wrapper = (props: Props) => (
   <MuiThemeProvider theme={theme}>
     {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
     <CssBaseline />
-    <Grid container justify="center">
-      <Grid item>
-        <Paper> {props.children} </Paper>
-      </Grid>
+    <NavBar />
+    <Grid className="gridWrapper" container justify="center">
+      <Paper className="childrenContainer"> {props.children} </Paper>
     </Grid>
   </MuiThemeProvider>
 );
