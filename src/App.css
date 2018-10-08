@@ -20,6 +20,19 @@
 .homeContainer {
 }
 
+.listOfRestaurants .listItemContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.listItem {
+  display: flex;
+}
+
+.listImage {
+  height: 200px;
+  width: 200px;
+}
 .sushiLandingImage {
   height: 70vh;
 }
