@@ -4,6 +4,12 @@ import React from 'react';
 import { AppBar, List, Toolbar, Typography } from '@material-ui/core';
 
 import RestaurantListItem from './RestaurantListItem';
+import type { Restaurant } from '../types/restaurants';
+type Props = {|
+  restaurants: Array<Restaurant>,
+|};
+
+type State = {||};
 
 class Learn extends React.Component<Props, State> {
   render() {
