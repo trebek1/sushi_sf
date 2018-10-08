@@ -21,3 +21,9 @@
 .sushiLandingImage {
   height: 70vh;
 }
+
+.menuBottomButtons {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+}

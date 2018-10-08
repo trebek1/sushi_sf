@@ -1,7 +1,7 @@
 /* @flow */
 
 import React from "react";
-import { Card, CardMedia, Grid, Paper } from "@material-ui/core";
+import { Button, Card, CardMedia, Grid, Paper } from "@material-ui/core";
 
 const Home = () => (
   <Grid className="homeContainer" container justify="center">
@@ -12,9 +12,19 @@ const Home = () => (
           src="https://i.postimg.cc/0yLc9Wff/sushi.png"
           component="img"
         />
-        <Paper> Sushi In San Francisco </Paper>
+        <div> Sushi In San Francisco </div>
+        <div className="menuBottomButtons">
+          <Button href="/learn" variant="outlined">
+            Learn
+          </Button>
+          <Button href="/revisit" variant="outlined" color="primary">
+            Revisit
+          </Button>
+          <Button href="explore" variant="outlined" color="secondary">
+            Explore
+          </Button>
+        </div>
       </Card>
-      {/* <img src="https://i.postimg.cc/0yLc9Wff/sushi.png" /> */}
     </Grid>
   </Grid>
 );
