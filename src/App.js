@@ -1,14 +1,14 @@
 //@flow
 
-import React from "react";
-import "./App.css";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from "./components/Home";
-import About from "./components/About";
-import Learn from "./components/Learn";
-import Revisit from "./components/Revisit";
-import Explore from "./components/Explore";
-import Wrapper from "./components/Wrapper";
+import React from 'react';
+import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Learn from './components/Learn';
+import Revisit from './components/Revisit';
+import Explore from './components/Explore';
+import Wrapper from './components/Wrapper';
 const App = () => (
   <Router>
     <Wrapper>

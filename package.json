@@ -10,7 +10,8 @@
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.4.0-beta.1",
-    "react-scripts": "2.0.4"
+    "react-scripts": "2.0.4",
+    "redux": "^4.0.0"
   },
   "scripts": {
     "prepublish": "npm run build",
@@ -28,6 +29,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "flow-bin": "^0.82.0"
+    "flow-bin": "^0.82.0",
+    "flow-typed": "^2.5.1"
   }
 }

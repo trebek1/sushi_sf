@@ -1,6 +1,7 @@
 [ignore]
 .*/node_modules/.*
-serviceWorker.js
+<PROJECT_ROOT>/src/serviceWorker.js
+<PROJECT_ROOT>/src/index.js
 [include]
 [libs]
 flow-typed
