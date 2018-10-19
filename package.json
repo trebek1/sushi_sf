@@ -6,15 +6,21 @@
     "@material-ui/core": "^3.1.2",
     "babel-cli": "^6.26.0",
     "babel-preset-flow": "^6.23.0",
+    "fs": "0.0.1-security",
+    "graphql": "^14.0.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
+    "react-relay": "^1.6.2",
     "react-router-dom": "^4.4.0-beta.1",
     "react-scripts": "2.0.4",
-    "redux": "^4.0.0"
+    "redux": "^4.0.0",
+    "relay-compiler": "^1.6.2",
+    "x-ray": "^2.3.3"
   },
   "scripts": {
     "prepublish": "npm run build",
+    "relay": "relay-compiler --src ./src --schema ./schema.graphql",
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
