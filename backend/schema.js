@@ -14,7 +14,7 @@ const {
 const RestaurantType = new GraphQLObjectType({
   name: 'Restaurant',
   fields: () => ({
-    id: { type: GraphQLString },
+    _id: { type: GraphQLString },
     address: { type: GraphQLString },
     alt: { type: GraphQLString },
     categories: { type: new GraphQLList(GraphQLString) },
@@ -35,8 +35,9 @@ const RootQuery = new GraphQLObjectType({
       resolve(parentValue, args) {
         return axios
           .get(
-            `https://sushiapp-456c1.firebaseio.com/restaurants.json?auth=${process
-              .env.SUSHI || ''}`
+            `https://sushiapp-456c1.firebaseio.com/restaurants/${
+              args.id
+            }.json?auth=${process.env.SUSHI || ''}`
           )
           .then(resp => resp.data);
       },
